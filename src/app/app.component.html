@@ -1,0 +1,10 @@
+<ion-app>
+  <ion-content>
+      <ion-item>
+        <ion-datetime (ionBlur)="onBlur($event)" (ionCancel)="onCancel($event)" (ionChange)="onChange($event)" [(ngModel)]="someDate"
+                      [max]="2030"
+                      [min]="2010"></ion-datetime>
+      </ion-item>
+      <ion-button (click)="changeDate()">Change date!</ion-button>
+  </ion-content>
+</ion-app>
