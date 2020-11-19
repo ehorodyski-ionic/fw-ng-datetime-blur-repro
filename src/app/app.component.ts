@@ -11,7 +11,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent {
 
-  public someDates = ["2012-01-01", "2013-01-01", "2014-01-01"]
+  public someDates = ["2016-01-01", "2017-01-01", "2018-01-01"]
   public someDate = this.someDates[0];
 
   constructor(
@@ -29,15 +29,15 @@ export class AppComponent {
     });
   }
 
-  onChange($event: CustomEvent) {
+  onIonChange($event: CustomEvent) {
     console.log("onChange triggered")
   }
 
-  onBlur($event: CustomEvent) {
+  onIonBlur($event: CustomEvent) {
     console.log("onBlur triggered")
   }
 
-  onCancel($event: CustomEvent) {
+  onIonCancel($event: CustomEvent) {
     console.log("onCancel triggered")
   }
 
